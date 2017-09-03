@@ -1,0 +1,61 @@
+Index: include/clang/Sema/Sema.h
+===================================================================
+--- include/clang/Sema/Sema.h
++++ include/clang/Sema/Sema.h
+@@ -54,6 +54,7 @@
+ #include "llvm/ADT/SmallPtrSet.h"
+ #include "llvm/ADT/SmallVector.h"
+ #include "llvm/ADT/TinyPtrVector.h"
++#include "llvm/Support/Timer.h"
+ #include <deque>
+ #include <memory>
+ #include <string>
+@@ -279,6 +280,8 @@
+ 
+   static bool mightHaveNonExternalLinkage(const DeclaratorDecl *FD);
+ 
++  llvm::RefCntTimer TemplateInstantiationTime;
++
+   bool isVisibleSlow(const NamedDecl *D);
+ 
+   bool shouldLinkPossiblyHiddenDecl(const NamedDecl *Old,
+Index: lib/Sema/Sema.cpp
+===================================================================
+--- lib/Sema/Sema.cpp
++++ lib/Sema/Sema.cpp
+@@ -116,6 +116,7 @@
+ Sema::Sema(Preprocessor &pp, ASTContext &ctxt, ASTConsumer &consumer,
+            TranslationUnitKind TUKind, CodeCompleteConsumer *CodeCompleter)
+     : ExternalSource(nullptr), isMultiplexExternalSource(false),
++      TemplateInstantiationTime("templateinst", "Template Instantiation Time"),
+       FPFeatures(pp.getLangOpts()), LangOpts(pp.getLangOpts()), PP(pp),
+       Context(ctxt), Consumer(consumer), Diags(PP.getDiagnostics()),
+       SourceMgr(PP.getSourceManager()), CollectStats(false),
+Index: lib/Sema/SemaTemplateInstantiate.cpp
+===================================================================
+--- lib/Sema/SemaTemplateInstantiate.cpp
++++ lib/Sema/SemaTemplateInstantiate.cpp
+@@ -1992,6 +1992,9 @@
+                        const MultiLevelTemplateArgumentList &TemplateArgs,
+                        TemplateSpecializationKind TSK,
+                        bool Complain) {
++  llvm::TimeRegion Region(
++      llvm::TimePassesIsEnabled ? &TemplateInstantiationTime : nullptr);
++
+   CXXRecordDecl *PatternDef
+     = cast_or_null<CXXRecordDecl>(Pattern->getDefinition());
+   if (DiagnoseUninstantiableTemplate(PointOfInstantiation, Instantiation,
+Index: lib/Sema/SemaTemplateInstantiateDecl.cpp
+===================================================================
+--- lib/Sema/SemaTemplateInstantiateDecl.cpp
++++ lib/Sema/SemaTemplateInstantiateDecl.cpp
+@@ -3752,6 +3752,9 @@
+                                          bool Recursive,
+                                          bool DefinitionRequired,
+                                          bool AtEndOfTU) {
++  llvm::TimeRegion Region(
++            llvm::TimePassesIsEnabled ? &TemplateInstantiationTime : nullptr);
++
+   if (Function->isInvalidDecl() || Function->isDefined())
+     return;
+ 
