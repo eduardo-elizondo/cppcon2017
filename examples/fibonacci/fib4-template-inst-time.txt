@@ -1,0 +1,4 @@
+CompleteTranslationUnit Time: 0.001488999 seconds;
+fib<4> Time: 0.000564000 seconds;
+fib<3> Time: 0.000464000 seconds;
+fib<2> Time: 0.000460999 seconds;
