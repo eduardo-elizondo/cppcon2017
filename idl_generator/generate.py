@@ -42,7 +42,7 @@ class StructGenerator:
         struct_name = "Struct" + str(struct_id)
         print("struct " + struct_name + " {", file=self.f)
         # Number of fields
-        for field_id in range(0, int(np.random.gamma(1.2, 50))):
+        for field_id in range(0, int(np.random.gamma(1.2, 5))):
             self.generate_field(field_id + 1)
         print("}", file=self.f)
         print("", file=self.f)
@@ -53,14 +53,16 @@ class ThriftFile:
         self.structCache = []
         self.fileName = "file" + str(file_num) + ".thrift"
         self.f = io.open("if/" + self.fileName, 'w', encoding='utf-8')
-        random_file_include = random.sample(
-                range(0, len(file_cache) - 1), random.randint(0, min(10, len(file_cache))))
-        for include in random_file_include:
-            include_name = "file" + str(include)
-            print("include \"" + include_name + ".thrift\"", file=self.f)
-            structs_namespaced = [include_name + "." + s for s in 
-                    file_cache[include].getStructCache()]
-            self.structCache.extend(structs_namespaced)
+        if len(file_cache) > 0:
+            random_file_include = random.sample(
+                    range(0, len(file_cache) - 1),
+                            random.randint(0, min(10, len(file_cache))))
+            for include in random_file_include:
+                include_name = "file" + str(include)
+                print("include \"" + include_name + ".thrift\"", file=self.f)
+                structs_namespaced = [include_name + "." + s for s in 
+                        file_cache[include].getStructCache()]
+                self.structCache.extend(structs_namespaced)
         print("", file=self.f)
 
     def closeFile(self):
@@ -81,7 +83,7 @@ def fileGenerator(file_id, file_cache):
     thrift_file = ThriftFile(file_id, file_cache)
     struct_generator.setThriftFile(thrift_file)
     # Number of Structs
-    for struct_id in range(0, int(np.random.gamma(1.2, 50))):
+    for struct_id in range(0, int(np.random.gamma(1.2, 10))):
         struct_generator.generate_struct(struct_id)
     thrift_file.closeFile()
     return thrift_file
@@ -97,8 +99,8 @@ if __name__ == "__main__":
         file_cache[depth + 1] = []
         # Number of Files
         file_id_range = range(1, random.randint(
-                50 * ((max_depth - depth) - 1) + 1,
-                50 * (max_depth - depth)))
+                10 * ((max_depth - depth) - 1) + 1,
+                10 * (max_depth - depth)))
         if max_depth - 1 == depth:
             file_id_range = [1]
         for file_id in file_id_range:
