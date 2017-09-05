@@ -41,6 +41,7 @@ class StructGenerator:
     def generate_struct(self, struct_id):
         struct_name = "Struct" + str(struct_id)
         print("struct " + struct_name + " {", file=self.f)
+        # Number of fields
         for field_id in range(0, int(np.random.gamma(1.2, 50))):
             self.generate_field(field_id + 1)
         print("}", file=self.f)
@@ -79,6 +80,7 @@ def fileGenerator(file_id, file_cache):
     struct_generator = StructGenerator()
     thrift_file = ThriftFile(file_id, file_cache)
     struct_generator.setThriftFile(thrift_file)
+    # Number of Structs
     for struct_id in range(0, int(np.random.gamma(1.2, 50))):
         struct_generator.generate_struct(struct_id)
     thrift_file.closeFile()
@@ -88,10 +90,12 @@ if __name__ == "__main__":
     if not os.path.exists("if"):
         os.makedirs("if")
 
+    # Depth of includes
     max_depth = 4
     file_cache = {0 : [], }
     for depth in range(0, max_depth):
         file_cache[depth + 1] = []
+        # Number of Files
         file_id_range = range(1, random.randint(
                 50 * ((max_depth - depth) - 1) + 1,
                 50 * (max_depth - depth)))
