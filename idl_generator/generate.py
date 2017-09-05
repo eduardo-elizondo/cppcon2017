@@ -1,4 +1,5 @@
 import io
+import os
 import random
 import numpy as np
 
@@ -47,9 +48,19 @@ class StructGenerator:
         self.structCache.append(struct_name)
 
 class ThriftFile:
-    def __init__(self, file_num):
+    def __init__(self, file_num, file_cache):
         self.structCache = []
-        self.f = io.open("file" + str(file_num) + ".thrift", 'w', encoding='utf-8')
+        self.fileName = "file" + str(file_num) + ".thrift"
+        self.f = io.open("if/" + self.fileName, 'w', encoding='utf-8')
+        random_file_include = random.sample(
+                range(0, len(file_cache) - 1), random.randint(0, min(10, len(file_cache))))
+        for include in random_file_include:
+            include_name = "file" + str(include)
+            print("include \"" + include_name + ".thrift\"", file=self.f)
+            structs_namespaced = [include_name + "." + s for s in 
+                    file_cache[include].getStructCache()]
+            self.structCache.extend(structs_namespaced)
+        print("", file=self.f)
 
     def closeFile(self):
         self.f.close()
@@ -60,10 +71,32 @@ class ThriftFile:
     def getStructCache(self):
         return self.structCache
 
-if __name__ == "__main__":
+    def getFileName(self):
+        return self.fileName
+
+
+def fileGenerator(file_id, file_cache):
     struct_generator = StructGenerator()
-    thrift_file = ThriftFile(0)
+    thrift_file = ThriftFile(file_id, file_cache)
     struct_generator.setThriftFile(thrift_file)
     for struct_id in range(0, int(np.random.gamma(1.2, 50))):
         struct_generator.generate_struct(struct_id)
     thrift_file.closeFile()
+    return thrift_file
+
+if __name__ == "__main__":
+    if not os.path.exists("if"):
+        os.makedirs("if")
+
+    max_depth = 4
+    file_cache = {0 : [], }
+    for depth in range(0, max_depth):
+        file_cache[depth + 1] = []
+        file_id_range = range(1, random.randint(
+                50 * ((max_depth - depth) - 1) + 1,
+                50 * (max_depth - depth)))
+        if max_depth - 1 == depth:
+            file_id_range = [1]
+        for file_id in file_id_range:
+            thrift_file = fileGenerator(file_id, file_cache[depth])
+            file_cache[depth + 1].append(thrift_file)
