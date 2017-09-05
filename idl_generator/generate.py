@@ -1,5 +1,6 @@
 import io
 import os
+import copy
 import random
 import numpy as np
 
@@ -11,6 +12,7 @@ field_types = [
 class StructGenerator:
     def setThriftFile(self, thriftFile):
         self.structCache = thriftFile.getStructCache()
+        self.structCacheIncludes = thriftFile.getIncludeStructCache()
         self.f = thriftFile.getFile()
 
     def generate_field_type(self, container_type_pct = 0.5):
@@ -25,10 +27,12 @@ class StructGenerator:
             complete_type += ("<" + self.generate_field_type(container_type_pct / 2) +
             ", " + self.generate_field_type(container_type_pct / 2) + ">")
         elif complete_type == "struct":
+            all_structs = self.structCacheIncludes
+            all_structs.extend(self.structCache)
             # Edge case when we can't generate structs
-            if len(self.structCache) == 0:
+            if len(all_structs) == 0:
                 return "bool"
-            complete_type = self.structCache[random.randint(0, len(self.structCache) - 1)]
+            complete_type = all_structs[random.randint(0, len(all_structs) - 1)]
         return complete_type
 
 
@@ -42,7 +46,7 @@ class StructGenerator:
         struct_name = "Struct" + str(struct_id)
         print("struct " + struct_name + " {", file=self.f)
         # Number of fields
-        for field_id in range(0, int(np.random.gamma(1.2, 5))):
+        for field_id in range(0, int(np.random.gamma(1.2, 50))):
             self.generate_field(field_id + 1)
         print("}", file=self.f)
         print("", file=self.f)
@@ -51,18 +55,19 @@ class StructGenerator:
 class ThriftFile:
     def __init__(self, file_num, file_cache):
         self.structCache = []
-        self.fileName = "file" + str(file_num) + ".thrift"
-        self.f = io.open("if/" + self.fileName, 'w', encoding='utf-8')
+        self.includeStructCache = []
+        self.fileName = "file" + str(file_num)
+        self.f = io.open("if/" + self.fileName + ".thrift", 'w', encoding='utf-8')
         if len(file_cache) > 0:
             random_file_include = random.sample(
                     range(0, len(file_cache) - 1),
                             random.randint(0, min(10, len(file_cache))))
             for include in random_file_include:
-                include_name = "file" + str(include)
+                include_name = file_cache[include].getFileName()
                 print("include \"" + include_name + ".thrift\"", file=self.f)
                 structs_namespaced = [include_name + "." + s for s in 
                         file_cache[include].getStructCache()]
-                self.structCache.extend(structs_namespaced)
+                self.includeStructCache.extend(structs_namespaced)
         print("", file=self.f)
 
     def closeFile(self):
@@ -74,6 +79,9 @@ class ThriftFile:
     def getStructCache(self):
         return self.structCache
 
+    def getIncludeStructCache(self):
+        return self.includeStructCache
+
     def getFileName(self):
         return self.fileName
 
@@ -83,7 +91,7 @@ def fileGenerator(file_id, file_cache):
     thrift_file = ThriftFile(file_id, file_cache)
     struct_generator.setThriftFile(thrift_file)
     # Number of Structs
-    for struct_id in range(0, int(np.random.gamma(1.2, 10))):
+    for struct_id in range(0, int(np.random.gamma(1.2, 50))):
         struct_generator.generate_struct(struct_id)
     thrift_file.closeFile()
     return thrift_file
@@ -98,9 +106,10 @@ if __name__ == "__main__":
     for depth in range(0, max_depth):
         file_cache[depth + 1] = []
         # Number of Files
-        file_id_range = range(1, random.randint(
-                10 * ((max_depth - depth) - 1) + 1,
-                10 * (max_depth - depth)))
+        num_range = range(21 * ((max_depth - depth) - 1) + 1,
+                          21 * (max_depth - depth))
+        file_id_range =  random.sample(
+                num_range,  random.randint(10, 20))
         if max_depth - 1 == depth:
             file_id_range = [1]
         for file_id in file_id_range:
