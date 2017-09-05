@@ -1,3 +1,4 @@
+namespace cpp2 example.thrift29
 
 struct Struct0 {
   1: set<bool> field1

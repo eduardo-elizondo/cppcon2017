@@ -1,3 +1,4 @@
+namespace cpp2 example.thrift27
 
 struct Struct0 {
   1: map<bool, double> field1

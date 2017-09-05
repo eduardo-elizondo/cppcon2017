@@ -1,6 +1,8 @@
 include "file32.thrift"
 include "file27.thrift"
 
+namespace cpp2 example.thrift19
+
 struct Struct0 {
   1: map<byte, byte> field1
   2: file27.Struct7 field2

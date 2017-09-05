@@ -1,6 +1,8 @@
 include "file29.thrift"
 include "file27.thrift"
 
+namespace cpp2 example.thrift12
+
 struct Struct0 {
   1: i16 field1
   2: set<i64> field2

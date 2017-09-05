@@ -1,3 +1,4 @@
+namespace cpp2 example.thrift32
 
 struct Struct0 {
   1: binary field1

@@ -1,4 +1,4 @@
-aux_source_directory(./gen-cpp2 GENERATED_FILES)
+aux_source_directory(./if/gen-cpp2 GENERATED_FILES)
 add_library(
   thrift_example
 
