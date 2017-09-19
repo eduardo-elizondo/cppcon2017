@@ -497,9 +497,6 @@ template uint32_t Struct0::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct0::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct1::__clear() {
@@ -618,9 +615,6 @@ template uint32_t Struct1::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct1::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct2::__clear() {
@@ -686,9 +680,6 @@ template uint32_t Struct2::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct2::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct3::__clear() {
@@ -1012,9 +1003,6 @@ template uint32_t Struct3::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct3::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct4::__clear() {
@@ -1062,9 +1050,6 @@ template uint32_t Struct4::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct4::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct5::__clear() {
@@ -1121,9 +1106,6 @@ template uint32_t Struct5::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct5::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct6::__clear() {
@@ -1241,9 +1223,6 @@ template uint32_t Struct6::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct6::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct7::__clear() {
@@ -1334,9 +1313,6 @@ template uint32_t Struct7::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct7::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct8::__clear() {
@@ -1462,9 +1438,6 @@ template uint32_t Struct8::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct8::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct9::__clear() {
@@ -1555,9 +1528,6 @@ template uint32_t Struct9::serializedSize<>(apache::thrift::CompactProtocolWrite
 template uint32_t Struct9::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct10::__clear() {
@@ -2080,9 +2050,6 @@ template uint32_t Struct10::serializedSize<>(apache::thrift::CompactProtocolWrit
 template uint32_t Struct10::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct11::__clear() {
@@ -2158,9 +2125,6 @@ template uint32_t Struct11::serializedSize<>(apache::thrift::CompactProtocolWrit
 template uint32_t Struct11::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct12::__clear() {
@@ -2270,9 +2234,6 @@ template uint32_t Struct12::serializedSize<>(apache::thrift::CompactProtocolWrit
 template uint32_t Struct12::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
 
 }} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift27 {
 
 void Struct13::__clear() {
@@ -2441,11 +2402,5 @@ template uint32_t Struct13::read<>(apache::thrift::CompactProtocolReader*);
 template uint32_t Struct13::write<>(apache::thrift::CompactProtocolWriter*) const;
 template uint32_t Struct13::serializedSize<>(apache::thrift::CompactProtocolWriter const*) const;
 template uint32_t Struct13::serializedSizeZC<>(apache::thrift::CompactProtocolWriter const*) const;
-
-}} // example::thrift27
-namespace apache { namespace thrift {
-
-}} // apache::thrift
-namespace example { namespace thrift27 {
 
 }} // example::thrift27

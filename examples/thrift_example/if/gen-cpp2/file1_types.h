@@ -17,14 +17,25 @@
 #include "file19_types.h"
 #include "file20_types.h"
 
+// BEGIN declare_enums
 
+// END declare_enums
+// BEGIN struct_indirection
 
+// END struct_indirection
+// BEGIN forward_declare
 namespace example { namespace thrift1 {
-
 class Struct0;
 class Struct1;
 class Struct2;
+}} // example::thrift1
+// END forward_declare
+// BEGIN typedefs
 
+// END typedefs
+// BEGIN hash_and_equal_to
+// END hash_and_equal_to
+namespace example { namespace thrift1 {
 class Struct0 : private apache::thrift::detail::st::ComparisonOperators<Struct0> {
  public:
 
@@ -558,7 +569,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift1::Stru
 
 }} // apache::thrift
 namespace example { namespace thrift1 {
-
 class Struct1 : private apache::thrift::detail::st::ComparisonOperators<Struct1> {
  public:
 
@@ -637,7 +647,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift1::Stru
 
 }} // apache::thrift
 namespace example { namespace thrift1 {
-
 class Struct2 : private apache::thrift::detail::st::ComparisonOperators<Struct2> {
  public:
 
@@ -852,6 +861,3 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift1::Stru
 }
 
 }} // apache::thrift
-namespace example { namespace thrift1 {
-
-}} // example::thrift1

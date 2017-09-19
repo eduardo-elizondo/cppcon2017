@@ -19,6 +19,8 @@ find_library(
         $ENV{THRIFT_ROOT}/lib
         ${THRIFT_ROOT}/lib
 )
+message("${THRIFT_INCLUDE_DIR}")
+include("${THRIFT_INCLUDE_DIR}/ThriftLibrary.cmake")
 
 mark_as_advanced(THRIFT_INCLUDE_DIR THRIFT_LIBRARY)
 

@@ -14,9 +14,10 @@
 #include <thrift/lib/cpp/transport/THeader.h>
 #include <thrift/lib/cpp2/GeneratedCodeHelper.h>
 #include <thrift/lib/cpp2/GeneratedSerializationCodeHelper.h>
+#include <thrift/lib/cpp2/server/Cpp2ConnContext.h>
+
 #include <thrift/lib/cpp2/protocol/BinaryProtocol.h>
 #include <thrift/lib/cpp2/protocol/CompactProtocol.h>
-#include <thrift/lib/cpp2/server/Cpp2ConnContext.h>
 
 namespace example { namespace thrift12 {
 
@@ -308,9 +309,6 @@ uint32_t Struct0::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -883,9 +881,6 @@ uint32_t Struct1::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -1660,9 +1655,6 @@ uint32_t Struct2::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -1828,9 +1820,6 @@ uint32_t Struct3::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -2328,9 +2317,6 @@ uint32_t Struct4::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -2428,9 +2414,6 @@ uint32_t Struct5::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -2493,9 +2476,6 @@ uint32_t Struct6::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -2576,9 +2556,6 @@ uint32_t Struct7::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -2641,9 +2618,6 @@ uint32_t Struct8::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -2898,9 +2872,6 @@ uint32_t Struct9::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -2998,9 +2969,6 @@ uint32_t Struct10::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -3133,9 +3101,6 @@ uint32_t Struct11::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -3320,9 +3285,6 @@ uint32_t Struct12::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -3403,9 +3365,6 @@ uint32_t Struct13::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -3729,9 +3688,6 @@ uint32_t Struct14::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -3794,9 +3750,6 @@ uint32_t Struct15::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -3945,9 +3898,6 @@ uint32_t Struct16::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -4133,9 +4083,6 @@ uint32_t Struct17::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -4408,9 +4355,6 @@ uint32_t Struct18::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -4544,9 +4488,6 @@ uint32_t Struct19::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -4644,9 +4585,6 @@ uint32_t Struct20::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -4812,9 +4750,6 @@ uint32_t Struct21::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -5085,9 +5020,6 @@ uint32_t Struct22::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -5388,9 +5320,6 @@ uint32_t Struct23::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -5523,9 +5452,6 @@ uint32_t Struct24::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -5936,9 +5862,6 @@ uint32_t Struct25::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -6276,9 +6199,6 @@ uint32_t Struct26::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -6691,9 +6611,6 @@ uint32_t Struct27::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -6790,9 +6707,6 @@ uint32_t Struct28::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -6944,9 +6858,6 @@ uint32_t Struct29::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -7043,9 +6954,6 @@ uint32_t Struct30::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -7458,9 +7366,6 @@ uint32_t Struct31::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -7645,9 +7550,6 @@ uint32_t Struct32::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -8004,9 +7906,6 @@ uint32_t Struct33::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -8831,9 +8730,6 @@ uint32_t Struct34::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -9140,9 +9036,6 @@ uint32_t Struct35::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -9417,9 +9310,6 @@ uint32_t Struct36::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -9585,9 +9475,6 @@ uint32_t Struct37::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -9738,9 +9625,6 @@ uint32_t Struct38::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -9943,9 +9827,6 @@ uint32_t Struct39::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -10265,9 +10146,6 @@ uint32_t Struct40::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -10504,9 +10382,6 @@ uint32_t Struct41::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -10671,9 +10546,6 @@ uint32_t Struct42::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -11636,9 +11508,6 @@ uint32_t Struct43::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -11719,9 +11588,6 @@ uint32_t Struct44::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -12045,9 +11911,6 @@ uint32_t Struct45::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -12337,9 +12200,6 @@ uint32_t Struct46::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -12402,9 +12262,6 @@ uint32_t Struct47::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -12537,9 +12394,6 @@ uint32_t Struct48::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -12947,9 +12801,6 @@ uint32_t Struct49::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -13533,9 +13384,6 @@ uint32_t Struct50::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -13773,9 +13621,6 @@ uint32_t Struct51::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -13977,9 +13822,6 @@ uint32_t Struct52::write(Protocol_* prot_) const {
 }
 
 }} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
 namespace example { namespace thrift12 {
 
 template <class Protocol_>
@@ -14299,11 +14141,5 @@ uint32_t Struct53::write(Protocol_* prot_) const {
   xfer += prot_->writeStructEnd();
   return xfer;
 }
-
-}} // example::thrift12
-namespace apache { namespace thrift {
-
-}} // apache::thrift
-namespace example { namespace thrift12 {
 
 }} // example::thrift12

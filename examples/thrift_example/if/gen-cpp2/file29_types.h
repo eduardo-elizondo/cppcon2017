@@ -14,10 +14,14 @@
 #include <thrift/lib/cpp2/protocol/Protocol.h>
 
 
+// BEGIN declare_enums
 
+// END declare_enums
+// BEGIN struct_indirection
 
+// END struct_indirection
+// BEGIN forward_declare
 namespace example { namespace thrift29 {
-
 class Struct0;
 class Struct1;
 class Struct2;
@@ -36,7 +40,14 @@ class Struct14;
 class Struct15;
 class Struct16;
 class Struct17;
+}} // example::thrift29
+// END forward_declare
+// BEGIN typedefs
 
+// END typedefs
+// BEGIN hash_and_equal_to
+// END hash_and_equal_to
+namespace example { namespace thrift29 {
 class Struct0 : private apache::thrift::detail::st::ComparisonOperators<Struct0> {
  public:
 
@@ -298,7 +309,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct1 : private apache::thrift::detail::st::ComparisonOperators<Struct1> {
  public:
 
@@ -872,7 +882,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct2 : private apache::thrift::detail::st::ComparisonOperators<Struct2> {
  public:
 
@@ -1264,7 +1273,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct3 : private apache::thrift::detail::st::ComparisonOperators<Struct3> {
  public:
 
@@ -1430,7 +1438,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct4 : private apache::thrift::detail::st::ComparisonOperators<Struct4> {
  public:
 
@@ -1618,7 +1625,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct5 : private apache::thrift::detail::st::ComparisonOperators<Struct5> {
  public:
 
@@ -1958,7 +1964,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct6 : private apache::thrift::detail::st::ComparisonOperators<Struct6> {
  public:
 
@@ -2552,7 +2557,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct7 : private apache::thrift::detail::st::ComparisonOperators<Struct7> {
  public:
 
@@ -3064,7 +3068,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct8 : private apache::thrift::detail::st::ComparisonOperators<Struct8> {
  public:
 
@@ -4388,7 +4391,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct9 : private apache::thrift::detail::st::ComparisonOperators<Struct9> {
  public:
 
@@ -4576,7 +4578,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct10 : private apache::thrift::detail::st::ComparisonOperators<Struct10> {
  public:
 
@@ -4792,7 +4793,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct11 : private apache::thrift::detail::st::ComparisonOperators<Struct11> {
  public:
 
@@ -5362,7 +5362,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct12 : private apache::thrift::detail::st::ComparisonOperators<Struct12> {
  public:
 
@@ -5578,7 +5577,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct13 : private apache::thrift::detail::st::ComparisonOperators<Struct13> {
  public:
 
@@ -5884,7 +5882,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct14 : private apache::thrift::detail::st::ComparisonOperators<Struct14> {
  public:
 
@@ -6418,7 +6415,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct15 : private apache::thrift::detail::st::ComparisonOperators<Struct15> {
  public:
 
@@ -6784,7 +6780,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct16 : private apache::thrift::detail::st::ComparisonOperators<Struct16> {
  public:
 
@@ -7068,7 +7063,6 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 
 }} // apache::thrift
 namespace example { namespace thrift29 {
-
 class Struct17 : private apache::thrift::detail::st::ComparisonOperators<Struct17> {
  public:
 
@@ -7329,6 +7323,3 @@ template <> template <class Protocol> uint32_t Cpp2Ops< ::example::thrift29::Str
 }
 
 }} // apache::thrift
-namespace example { namespace thrift29 {
-
-}} // example::thrift29
