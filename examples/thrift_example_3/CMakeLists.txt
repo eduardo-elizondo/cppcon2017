@@ -7,12 +7,22 @@ endif()
 add_library(
   thrift_example_3
 
-  ${GENERATED_FILES}	
-  ${FOLLY_INCLUDE_DIR}
-  ${THRIFT_INCLUDE_DIR}
+  if/gen-cpp2/file1_types.cpp
 )
 target_link_libraries(
   thrift_example_3
+
+  ${FOLLY_LIBRARY}
+  ${THIRFT_LIBRARY}
+)
+
+add_library(
+  thrift_example_3_templated
+
+  if/gen-templated-cpp2/file1_types.cpp
+)
+target_link_libraries(
+  thrift_example_3_templated
 
   ${FOLLY_LIBRARY}
   ${THIRFT_LIBRARY}
