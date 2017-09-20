@@ -1,4 +1,9 @@
-aux_source_directory(./if/gen-cpp2 GENERATED_FILES)
+if(templated)
+  aux_source_directory(./if/gen-templated-cpp2 GENERATED_FILES)
+else()
+  aux_source_directory(./if/gen-cpp2 GENERATED_FILES)
+endif()
+
 add_library(
   thrift_example
 

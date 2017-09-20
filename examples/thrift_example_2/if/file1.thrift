@@ -34,4 +34,3 @@ struct Struct2 {
   4: i32 field4
   5: i16 field5
 }
-
