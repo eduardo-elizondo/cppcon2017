@@ -1,6 +1,6 @@
 # Get Deps and apply patches
 mkdir external
-pusd external
+pushd external
 svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
 cd llvm
 svn patch ../patches/RefCount.diff
@@ -37,3 +37,4 @@ git clone https://github.com/eduardo-elizondo/templight-tools
 cd templight_tools
 cmake .
 make -j 32
+popd
