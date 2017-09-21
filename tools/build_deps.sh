@@ -33,7 +33,7 @@ if [ ! -d "external/llvm/tools/clang/tools/templight" ]; then
   pushd external/llvm/tools/clang/tools
   git clone https://github.com/mikael-s-persson/templight
   cd ..
-  svn patch tools/templight/templight_clang_patch.diff
+  patch -p0 < tools/templight/templight_clang_patch.diff
   popd
 fi
 
