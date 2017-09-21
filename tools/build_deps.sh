@@ -34,7 +34,7 @@ popd
 # Get template instantiation time tools
 pushd external
 git clone https://github.com/eduardo-elizondo/templight-tools
-cd templight_tools
+cd templight-tools
 cmake .
 make -j 32
 popd
