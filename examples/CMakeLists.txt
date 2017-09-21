@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.1.3 FATAL_ERROR)
+set(LLVM_BUILD "${CMAKE_SOURCE_DIR}/../external/llvm_build")
 
-set(CMAKE_C_COMPILER    "/Users/eelizondo/Documents/llvm_build/bin/templight")
-set(CMAKE_CXX_COMPILER  "/Users/eelizondo/Documents/llvm_build/bin/templight++")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xtemplight -profiler -Xtemplight -memory -Xtemplight -ignore-system -std=c++14 -stdlib=libc++ -nostdinc++ -I/Users/eelizondo/Documents/llvm_build/include/c++/v1" CACHE STRING "compiler flags" FORCE)
+set(CMAKE_C_COMPILER    "${LLVM_BUILD}/bin/templight")
+set(CMAKE_CXX_COMPILER  "${LLVM_BUILD}/bin/templight++")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xtemplight -profiler -Xtemplight -ignore-system -std=c++14 -stdlib=libc++ -nostdinc++ -I${LLVM_BUILD}/include/c++/v1" CACHE STRING "compiler flags" FORCE)
 
 set(PACKAGE_NAME "thrift_example")
 
