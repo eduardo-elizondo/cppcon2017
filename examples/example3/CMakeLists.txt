@@ -1,7 +1,7 @@
 if(templated)
-  aux_source_directory(./gen-templated-cpp2 GENERATED_FILES)
+  aux_source_directory(./templated/gen-cpp2 GENERATED_FILES)
 else()
-  aux_source_directory(./gen-cpp2 GENERATED_FILES)
+  aux_source_directory(./normal/gen-cpp2 GENERATED_FILES)
 endif()
 
 add_library(
