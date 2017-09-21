@@ -13,6 +13,7 @@ fi
 if [ ! -d "external/llvm/projects/libcx" ]; then
   pushd external/llvm/projects
   git clone https://github.com/llvm-mirror/libcxx
+  git clone https://github.com/llvm-mirror/libcxxabi
   popd
 fi
 
