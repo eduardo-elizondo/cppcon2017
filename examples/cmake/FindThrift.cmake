@@ -11,7 +11,6 @@ find_path(
   HINTS
       $ENV{THRIFT_ROOT}/include
       ${THRIFT_ROOT}/include
-      ${EXTERNAL_DEPS}/fbthrift/include
 )
 
 find_library(
@@ -19,10 +18,8 @@ find_library(
     HINTS
         $ENV{THRIFT_ROOT}/lib
         ${THRIFT_ROOT}/lib
-        ${EXTERNAL_DEPS}/fbthrift/lib
 )
-message("${THRIFT_INCLUDE_DIR}")
-include("${THRIFT_INCLUDE_DIR}/ThriftLibrary.cmake")
+include("${THRIFT_INCLUDE_DIR}/thrift/ThriftLibrary.cmake")
 
 mark_as_advanced(THRIFT_INCLUDE_DIR THRIFT_LIBRARY)
 

@@ -68,7 +68,6 @@ if [ ! -d "external/folly" ]; then
   cd folly/folly
   autoreconf -ivf
   ./configure
-  make -j 32
   make install -j 32
   popd
 fi
@@ -79,7 +78,7 @@ if [ ! -d "external/fbthrift" ]; then
   git clone https://github.com/facebook/fbthrift
   cd fbthrift
   cmake -DOPENSSL_ROOT_DIR=/usr/local/ssl .
-  make -j 32
+  make install -j 32
   popd
 fi
 
