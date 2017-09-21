@@ -4,7 +4,7 @@ set(LLVM_BUILD "${EXTERNAL_DEPS}/llvm_build")
 
 set(CMAKE_C_COMPILER    "${LLVM_BUILD}/bin/templight")
 set(CMAKE_CXX_COMPILER  "${LLVM_BUILD}/bin/templight++")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xtemplight -profiler -Xtemplight -ignore-system -std=c++14 -stdlib=libc++ -nostdinc++ -I${LLVM_BUILD}/include/c++/v1" CACHE STRING "compiler flags" FORCE)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ftime-report -std=c++14 -stdlib=libc++ -nostdinc++ -I${LLVM_BUILD}/include/c++/v1" CACHE STRING "compiler flags" FORCE)
 
 set(PACKAGE_NAME "thrift_example")
 
