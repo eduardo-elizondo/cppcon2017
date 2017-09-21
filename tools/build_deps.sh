@@ -24,7 +24,7 @@ if [ ! -d "external/llvm/tools/clang" ]; then
   cd clang
   patch -p0 < ../../../../llvm_patches/IRTime.diff
   patch -p0 < ../../../../llvm_patches/LexingTime.diff
-  patch -p0 < ../../../../llv_patches/TemplateInstTime.diff
+  patch -p0 < ../../../../llvm_patches/TemplateInstTime.diff
   popd
 fi
 
