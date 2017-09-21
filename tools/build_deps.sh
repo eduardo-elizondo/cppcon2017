@@ -54,10 +54,10 @@ fi
 ## Get template instantiation time tools
 if [ ! -d "external/templight-tools" ]; then
   pushd external
-  git clone https://github.com/eduardo-elizondo/templight-tools external
+  git clone https://github.com/eduardo-elizondo/templight-tools
   cd templight-tools
   cmake .
-  make -j 32
+  make install -j 32
   popd
 fi
 
