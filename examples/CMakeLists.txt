@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.1.3 FATAL_ERROR)
-set(LLVM_BUILD "${CMAKE_SOURCE_DIR}/../external/llvm_build")
+set(EXTERNAL_DEPS "${CMAKE_SOURCE_DIR}/../external")
+set(LLVM_BUILD "${EXTERNAL_DEPS}/llvm_build")
 
 set(CMAKE_C_COMPILER    "${LLVM_BUILD}/bin/templight")
 set(CMAKE_CXX_COMPILER  "${LLVM_BUILD}/bin/templight++")
