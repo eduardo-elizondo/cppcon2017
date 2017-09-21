@@ -3,28 +3,27 @@ mkdir external
 ## Get llvm
 if [ ! -d "external/llvm" ]; then
   pushd external
-  svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
+  git clone https://github.com/llvm-mirror/llvm
   cd llvm
-  svn patch ../llvm_patches/RefCount.diff
+  patch -p0 <  ../../llvm_patches/RefCount.diff
   popd
 fi
 
 ## Get libcxx
 if [ ! -d "external/llvm/projects/libcx" ]; then
   pushd external/llvm/projects
-  svn co http://llvm.org/svn/llvm-project/libcxx/trunk libcxx
-  svn co http://llvm.org/svn/llvm-project/libcxxabi/trunk libcxxabi
+  git clone https://github.com/llvm-mirror/libcxx
   popd
 fi
 
 ## Get clang
 if [ ! -d "external/llvm/tools/clang" ]; then
   pushd external/llvm/tools
-  svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
+  git clone https://github.com/llvm-mirror/clang
   cd clang
-  svn patch ../../../llvm_patches/IRTime.diff
-  svn patch ../../../llvm_patches/LexingTime.diff
-  svn patch ../../../llv_patches/TemplateInstTime.diff
+  patch -p0 < ../../../../llvm_patches/IRTime.diff
+  patch -p0 < ../../../../llvm_patches/LexingTime.diff
+  patch -p0 < ../../../../llv_patches/TemplateInstTime.diff
   popd
 fi
 
