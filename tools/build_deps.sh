@@ -5,7 +5,7 @@ if [ ! -d "external/llvm" ]; then
   pushd external
   svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
   cd llvm
-  svn patch ../patches/RefCount.diff
+  svn patch ../llvm_patches/RefCount.diff
   popd
 fi
 
@@ -22,9 +22,9 @@ if [ ! -d "external/llvm/tools/clang" ]; then
   pushd external/llvm/tools
   svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
   cd clang
-  svn patch ../../../patches/IRTime.diff
-  svn patch ../../../patches/LexingTime.diff
-  svn patch ../../../patches/TemplateInstTime.diff
+  svn patch ../../../llvm_patches/IRTime.diff
+  svn patch ../../../llvm_patches/LexingTime.diff
+  svn patch ../../../llv_patches/TemplateInstTime.diff
   popd
 fi
 
