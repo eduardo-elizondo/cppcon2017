@@ -1,5 +1,5 @@
 mkdir build
 pushd build
-cmake -Dtemplated=$1 -Dexample$2=ON  ..
-make 2> example$2_time-report.txt
+cmake -D$1=ON -Dtemplated=$2 ..
+make 2> $1_time-report.txt
 popd
