@@ -1,4 +1,3 @@
-
 struct Struct0 {
   1: i64 field1
   2: i16 field2
@@ -157,4 +156,3 @@ struct Struct18 {
 struct Struct19 {
   1: Struct3 field1
 }
-

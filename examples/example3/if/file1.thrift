@@ -1,4 +1,3 @@
-
 struct Struct0 {
   1: map<double, float> field1
   2: binary field2
@@ -3408,4 +3407,3 @@ struct Struct28 {
   154: double field154
   155: list<binary> field155
 }
-
