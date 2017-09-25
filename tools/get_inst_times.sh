@@ -1,3 +1,5 @@
+#$1 - name of output file
+#$2 - file path to *.trace.pbf file
 templight-convert -f graphviz-cg -t 0.00005 -o $1_inst-time.txt $2
 find . -maxdepth 1 -name "*inst-time.txt" | xargs sed -ie "/->/d;"
 find . -maxdepth 1 -name "*inst-time.txt" | xargs perl -pi -e "s/^[0-9]*//d;"
