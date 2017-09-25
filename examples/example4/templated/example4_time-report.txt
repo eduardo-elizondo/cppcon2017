@@ -1,0 +1,340 @@
+===-------------------------------------------------------------------------===
+                          Clang front-end time report
+===-------------------------------------------------------------------------===
+  Total Execution Time: 13.2059 seconds (13.2363 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  11.6169 (100.0%)   1.5890 (100.0%)  13.2059 (100.0%)  13.2363 (100.0%)  Clang front-end timer
+  11.6169 (100.0%)   1.5890 (100.0%)  13.2059 (100.0%)  13.2363 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   8.7353 ( 95.6%)   1.1876 ( 97.0%)   9.9229 ( 95.7%)   9.9285 ( 95.7%)  Template Instantiation Time
+   0.3930 (  4.3%)   0.0145 (  1.2%)   0.4075 (  3.9%)   0.4080 (  3.9%)  LLVM IR Generation Time
+   0.0130 (  0.1%)   0.0224 (  1.8%)   0.0353 (  0.3%)   0.0355 (  0.3%)  Preprocessing
+   0.0007 (  0.0%)   0.0002 (  0.0%)   0.0010 (  0.0%)   0.0010 (  0.0%)  Code Generation Time
+   9.1421 (100.0%)   1.2247 (100.0%)  10.3668 (100.0%)  10.3729 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                 DWARF Emission
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0000 seconds (0.0000 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0000 ( 80.0%)   0.0000 ( 83.3%)   0.0000 ( 81.2%)   0.0000 ( 85.5%)  Debug Info Emission
+   0.0000 ( 10.0%)   0.0000 (  0.0%)   0.0000 (  6.2%)   0.0000 (  8.1%)  DWARF Exception Writer
+   0.0000 ( 10.0%)   0.0000 ( 16.7%)   0.0000 ( 12.5%)   0.0000 (  6.5%)  DWARF Debug Writer
+   0.0000 (100.0%)   0.0000 (100.0%)   0.0000 (100.0%)   0.0000 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0000 seconds (0.0000 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0000 ( 37.5%)   0.0000 ( 28.6%)   0.0000 ( 33.3%)   0.0000 ( 25.3%)  Inliner for always_inline functions
+   0.0000 ( 12.5%)   0.0000 ( 14.3%)   0.0000 ( 13.3%)   0.0000 ( 20.5%)  Rewrite Symbols
+   0.0000 ( 25.0%)   0.0000 ( 14.3%)   0.0000 ( 20.0%)   0.0000 ( 14.5%)  CallGraph Construction
+   0.0000 (  0.0%)   0.0000 ( 14.3%)   0.0000 (  6.7%)   0.0000 ( 10.8%)  Force set function attributes
+   0.0000 (  0.0%)   0.0000 ( 14.3%)   0.0000 (  6.7%)   0.0000 (  6.0%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  4.8%)  Machine Module Information
+   0.0000 ( 12.5%)   0.0000 (  0.0%)   0.0000 (  6.7%)   0.0000 (  4.8%)  Pre-ISel Intrinsic Lowering
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  4.8%)  Target Transform Information
+   0.0000 ( 12.5%)   0.0000 (  0.0%)   0.0000 (  6.7%)   0.0000 (  4.8%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 ( 14.3%)   0.0000 (  6.7%)   0.0000 (  3.6%)  Profile summary info
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Create Garbage Collector Module Metadata
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Assumption Cache Tracker
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Branch Probability Analysis
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Assumption Cache Tracker
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Pass Configuration
+   0.0000 (100.0%)   0.0000 (100.0%)   0.0000 (100.0%)   0.0000 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                          Clang front-end time report
+===-------------------------------------------------------------------------===
+  Total Execution Time: 13.2339 seconds (13.2468 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  11.6399 (100.0%)   1.5940 (100.0%)  13.2339 (100.0%)  13.2468 (100.0%)  Clang front-end timer
+  11.6399 (100.0%)   1.5940 (100.0%)  13.2339 (100.0%)  13.2468 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   8.7543 ( 95.6%)   1.1914 ( 97.1%)   9.9457 ( 95.8%)   9.9537 ( 95.8%)  Template Instantiation Time
+   0.3861 (  4.2%)   0.0145 (  1.2%)   0.4006 (  3.9%)   0.4010 (  3.9%)  LLVM IR Generation Time
+   0.0124 (  0.1%)   0.0214 (  1.7%)   0.0338 (  0.3%)   0.0347 (  0.3%)  Preprocessing
+   0.0006 (  0.0%)   0.0002 (  0.0%)   0.0009 (  0.0%)   0.0009 (  0.0%)  Code Generation Time
+   9.1535 (100.0%)   1.2275 (100.0%)  10.3810 (100.0%)  10.3903 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                 DWARF Emission
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0000 seconds (0.0000 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0000 ( 85.7%)   0.0000 ( 80.0%)   0.0000 ( 83.3%)   0.0000 ( 82.1%)  Debug Info Emission
+   0.0000 ( 14.3%)   0.0000 ( 20.0%)   0.0000 ( 16.7%)   0.0000 (  8.9%)  DWARF Debug Writer
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  8.9%)  DWARF Exception Writer
+   0.0000 (100.0%)   0.0000 (100.0%)   0.0000 (100.0%)   0.0000 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0000 seconds (0.0000 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0000 ( 42.9%)   0.0000 ( 28.6%)   0.0000 ( 35.7%)   0.0000 ( 27.0%)  Inliner for always_inline functions
+   0.0000 ( 14.3%)   0.0000 ( 14.3%)   0.0000 ( 14.3%)   0.0000 ( 23.0%)  CallGraph Construction
+   0.0000 ( 28.6%)   0.0000 ( 14.3%)   0.0000 ( 21.4%)   0.0000 ( 16.2%)  Rewrite Symbols
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  6.8%)  Machine Branch Probability Analysis
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  5.4%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 ( 14.3%)   0.0000 (  7.1%)   0.0000 (  5.4%)  Profile summary info
+   0.0000 ( 14.3%)   0.0000 (  0.0%)   0.0000 (  7.1%)   0.0000 (  5.4%)  Target Transform Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  5.4%)  Force set function attributes
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  5.4%)  Assumption Cache Tracker
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Pass Configuration
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Create Garbage Collector Module Metadata
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 ( 14.3%)   0.0000 (  7.1%)   0.0000 (  0.0%)  Pre-ISel Intrinsic Lowering
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Assumption Cache Tracker
+   0.0000 (  0.0%)   0.0000 ( 14.3%)   0.0000 (  7.1%)   0.0000 (  0.0%)  Machine Module Information
+   0.0000 (100.0%)   0.0000 (100.0%)   0.0000 (100.0%)   0.0000 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                          Clang front-end time report
+===-------------------------------------------------------------------------===
+  Total Execution Time: 77.6395 seconds (77.7556 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  70.1655 (100.0%)   7.4740 (100.0%)  77.6395 (100.0%)  77.7556 (100.0%)  Clang front-end timer
+  70.1655 (100.0%)   7.4740 (100.0%)  77.6395 (100.0%)  77.7556 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  30.1060 ( 46.7%)   3.7735 ( 63.3%)  33.8795 ( 48.1%)  33.9011 ( 48.1%)  Template Instantiation Time
+  26.3056 ( 40.8%)   1.9271 ( 32.3%)  28.2327 ( 40.1%)  28.2918 ( 40.2%)  Code Generation Time
+   7.9724 ( 12.4%)   0.2230 (  3.7%)   8.1954 ( 11.6%)   8.2033 ( 11.6%)  LLVM IR Generation Time
+   0.0200 (  0.0%)   0.0356 (  0.6%)   0.0556 (  0.1%)   0.0569 (  0.1%)  Preprocessing
+  64.4041 (100.0%)   5.9592 (100.0%)  70.3633 (100.0%)  70.4531 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      Instruction Selection and Scheduling
+===-------------------------------------------------------------------------===
+  Total Execution Time: 2.6670 seconds (2.6722 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   1.0065 ( 38.9%)   0.0173 ( 22.1%)   1.0238 ( 38.4%)   1.0275 ( 38.5%)  DAG Combining 1
+   0.4799 ( 18.5%)   0.0091 ( 11.7%)   0.4890 ( 18.3%)   0.4898 ( 18.3%)  Instruction Selection
+   0.3741 ( 14.5%)   0.0074 (  9.4%)   0.3815 ( 14.3%)   0.3820 ( 14.3%)  DAG Combining 2
+   0.3262 ( 12.6%)   0.0099 ( 12.7%)   0.3361 ( 12.6%)   0.3364 ( 12.6%)  Instruction Scheduling
+   0.1859 (  7.2%)   0.0078 (  9.9%)   0.1936 (  7.3%)   0.1936 (  7.2%)  Instruction Creation
+   0.0951 (  3.7%)   0.0068 (  8.7%)   0.1019 (  3.8%)   0.1019 (  3.8%)  DAG Legalization
+   0.0597 (  2.3%)   0.0067 (  8.6%)   0.0665 (  2.5%)   0.0664 (  2.5%)  Type Legalization
+   0.0480 (  1.9%)   0.0069 (  8.8%)   0.0549 (  2.1%)   0.0548 (  2.1%)  Instruction Scheduling Cleanup
+   0.0127 (  0.5%)   0.0063 (  8.1%)   0.0190 (  0.7%)   0.0192 (  0.7%)  Vector Legalization
+   0.0006 (  0.0%)   0.0000 (  0.0%)   0.0006 (  0.0%)   0.0006 (  0.0%)  DAG Combining after legalize types
+   2.5888 (100.0%)   0.0782 (100.0%)   2.6670 (100.0%)   2.6722 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                 DWARF Emission
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.1306 seconds (0.1324 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0689 ( 78.7%)   0.0216 ( 50.2%)   0.0905 ( 69.3%)   0.0906 ( 68.5%)  DWARF Exception Writer
+   0.0186 ( 21.3%)   0.0214 ( 49.8%)   0.0400 ( 30.7%)   0.0417 ( 31.5%)  Debug Info Emission
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  DWARF Debug Writer
+   0.0876 (100.0%)   0.0430 (100.0%)   0.1306 (100.0%)   0.1324 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 22.3360 seconds (22.3776 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   6.9990 ( 33.2%)   0.2469 ( 19.6%)   7.2459 ( 32.4%)   7.2611 ( 32.4%)  X86 DAG->DAG Instruction Selection
+   6.1465 ( 29.2%)   0.3118 ( 24.7%)   6.4583 ( 28.9%)   6.4618 ( 28.9%)  Inliner for always_inline functions
+   1.8667 (  8.9%)   0.0152 (  1.2%)   1.8818 (  8.4%)   1.8837 (  8.4%)  Insert stack protectors
+   1.6755 (  8.0%)   0.1361 ( 10.8%)   1.8117 (  8.1%)   1.8166 (  8.1%)  X86 Assembly Printer
+   1.0214 (  4.8%)   0.0158 (  1.2%)   1.0371 (  4.6%)   1.0383 (  4.6%)  Prologue/Epilogue Insertion & Frame Finalization
+   0.7661 (  3.6%)   0.0216 (  1.7%)   0.7876 (  3.5%)   0.7882 (  3.5%)  Fast Register Allocator
+   0.4028 (  1.9%)   0.0175 (  1.4%)   0.4203 (  1.9%)   0.4211 (  1.9%)  Two-Address instruction pass
+   0.2517 (  1.2%)   0.0158 (  1.3%)   0.2675 (  1.2%)   0.2679 (  1.2%)  Dominator Tree Construction
+   0.2255 (  1.1%)   0.0194 (  1.5%)   0.2448 (  1.1%)   0.2449 (  1.1%)  MachineDominator Tree Construction
+   0.2181 (  1.0%)   0.0120 (  0.9%)   0.2300 (  1.0%)   0.2314 (  1.0%)  CallGraph Construction
+   0.1996 (  0.9%)   0.0307 (  2.4%)   0.2303 (  1.0%)   0.2311 (  1.0%)  Free MachineFunction
+   0.1883 (  0.9%)   0.0148 (  1.2%)   0.2031 (  0.9%)   0.2047 (  0.9%)  Dominator Tree Construction
+   0.1727 (  0.8%)   0.0145 (  1.1%)   0.1871 (  0.8%)   0.1882 (  0.8%)  Expand Atomic instructions
+   0.1547 (  0.7%)   0.0127 (  1.0%)   0.1674 (  0.7%)   0.1678 (  0.7%)  Machine Natural Loop Construction
+   0.0847 (  0.4%)   0.0126 (  1.0%)   0.0973 (  0.4%)   0.0975 (  0.4%)  Post-RA pseudo instruction expansion pass
+   0.0776 (  0.4%)   0.0124 (  1.0%)   0.0900 (  0.4%)   0.0906 (  0.4%)  Expand ISel Pseudo-instructions
+   0.0604 (  0.3%)   0.0148 (  1.2%)   0.0753 (  0.3%)   0.0778 (  0.3%)  Remove unreachable blocks from the CFG
+   0.0631 (  0.3%)   0.0124 (  1.0%)   0.0755 (  0.3%)   0.0757 (  0.3%)  X86 pseudo instruction expansion pass
+   0.0615 (  0.3%)   0.0130 (  1.0%)   0.0746 (  0.3%)   0.0750 (  0.3%)  Expand reduction intrinsics
+   0.0519 (  0.2%)   0.0124 (  1.0%)   0.0643 (  0.3%)   0.0646 (  0.3%)  Exception handling preparation
+   0.0420 (  0.2%)   0.0138 (  1.1%)   0.0558 (  0.2%)   0.0564 (  0.3%)  Basic Alias Analysis (stateless AA impl)
+   0.0343 (  0.2%)   0.0138 (  1.1%)   0.0482 (  0.2%)   0.0481 (  0.2%)  Eliminate PHI nodes for register allocation
+   0.0348 (  0.2%)   0.0122 (  1.0%)   0.0470 (  0.2%)   0.0472 (  0.2%)  Bundle Machine CFG Edges
+   0.0171 (  0.1%)   0.0122 (  1.0%)   0.0293 (  0.1%)   0.0294 (  0.1%)  Machine Optimization Remark Emitter
+   0.0169 (  0.1%)   0.0125 (  1.0%)   0.0294 (  0.1%)   0.0293 (  0.1%)  Insert fentry calls
+   0.0148 (  0.1%)   0.0123 (  1.0%)   0.0271 (  0.1%)   0.0271 (  0.1%)  Machine Optimization Remark Emitter
+   0.0144 (  0.1%)   0.0124 (  1.0%)   0.0268 (  0.1%)   0.0268 (  0.1%)  Insert XRay ops
+   0.0137 (  0.1%)   0.0123 (  1.0%)   0.0260 (  0.1%)   0.0264 (  0.1%)  Implement the 'patchable-function' attribute
+   0.0130 (  0.1%)   0.0122 (  1.0%)   0.0252 (  0.1%)   0.0250 (  0.1%)  Local Stack Slot Allocation
+   0.0120 (  0.1%)   0.0124 (  1.0%)   0.0244 (  0.1%)   0.0245 (  0.1%)  X86 FP Stackifier
+   0.0112 (  0.1%)   0.0124 (  1.0%)   0.0236 (  0.1%)   0.0240 (  0.1%)  Live DEBUG_VALUE analysis
+   0.0114 (  0.1%)   0.0123 (  1.0%)   0.0237 (  0.1%)   0.0238 (  0.1%)  Lazy Machine Block Frequency Analysis
+   0.0109 (  0.1%)   0.0124 (  1.0%)   0.0233 (  0.1%)   0.0235 (  0.1%)  X86 PIC Global Base Reg Initialization
+   0.0112 (  0.1%)   0.0123 (  1.0%)   0.0234 (  0.1%)   0.0234 (  0.1%)  Contiguously Lay Out Funclets
+   0.0108 (  0.1%)   0.0124 (  1.0%)   0.0232 (  0.1%)   0.0234 (  0.1%)  Analyze Machine Code For Garbage Collection
+   0.0105 (  0.0%)   0.0122 (  1.0%)   0.0227 (  0.1%)   0.0232 (  0.1%)  Lazy Machine Block Frequency Analysis
+   0.0110 (  0.1%)   0.0124 (  1.0%)   0.0234 (  0.1%)   0.0230 (  0.1%)  X86 WinAlloca Expander
+   0.0103 (  0.0%)   0.0124 (  1.0%)   0.0227 (  0.1%)   0.0229 (  0.1%)  Inserts calls to mcount-like functions
+   0.0105 (  0.0%)   0.0122 (  1.0%)   0.0227 (  0.1%)   0.0228 (  0.1%)  StackMap Liveness Analysis
+   0.0098 (  0.0%)   0.0123 (  1.0%)   0.0221 (  0.1%)   0.0220 (  0.1%)  X86 vzeroupper inserter
+   0.0090 (  0.0%)   0.0124 (  1.0%)   0.0213 (  0.1%)   0.0215 (  0.1%)  Scalarize Masked Memory Intrinsics
+   0.0092 (  0.0%)   0.0123 (  1.0%)   0.0214 (  0.1%)   0.0214 (  0.1%)  Safe Stack instrumentation pass
+   0.0082 (  0.0%)   0.0121 (  1.0%)   0.0202 (  0.1%)   0.0206 (  0.1%)  Lower Garbage Collection Instructions
+   0.0081 (  0.0%)   0.0124 (  1.0%)   0.0205 (  0.1%)   0.0206 (  0.1%)  Shadow Stack GC Lowering
+   0.0162 (  0.1%)   0.0000 (  0.0%)   0.0162 (  0.1%)   0.0162 (  0.1%)  Assumption Cache Tracker
+   0.0120 (  0.1%)   0.0014 (  0.1%)   0.0135 (  0.1%)   0.0140 (  0.1%)  Assumption Cache Tracker
+   0.0029 (  0.0%)   0.0000 (  0.0%)   0.0029 (  0.0%)   0.0029 (  0.0%)  Pre-ISel Intrinsic Lowering
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Rewrite Symbols
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Force set function attributes
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Profile summary info
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Module Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Transform Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Create Garbage Collector Module Metadata
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Branch Probability Analysis
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Pass Configuration
+  21.0737 (100.0%)   1.2623 (100.0%)  22.3360 (100.0%)  22.3776 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                          Clang front-end time report
+===-------------------------------------------------------------------------===
+  Total Execution Time: 29.6314 seconds (29.8054 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  26.6926 (100.0%)   2.9388 (100.0%)  29.6314 (100.0%)  29.8054 (100.0%)  Clang front-end timer
+  26.6926 (100.0%)   2.9388 (100.0%)  29.6314 (100.0%)  29.8054 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  12.8572 ( 55.9%)   1.7117 ( 72.6%)  14.5689 ( 57.5%)  14.5784 ( 57.5%)  Template Instantiation Time
+   7.7350 ( 33.6%)   0.5395 ( 22.9%)   8.2745 ( 32.6%)   8.2822 ( 32.6%)  Code Generation Time
+   2.3785 ( 10.3%)   0.0670 (  2.8%)   2.4455 (  9.6%)   2.4478 (  9.6%)  LLVM IR Generation Time
+   0.0222 (  0.1%)   0.0395 (  1.7%)   0.0617 (  0.2%)   0.0635 (  0.3%)  Preprocessing
+  22.9928 (100.0%)   2.3577 (100.0%)  25.3506 (100.0%)  25.3718 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      Instruction Selection and Scheduling
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4643 seconds (0.4646 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.2284 ( 50.2%)   0.0019 ( 20.9%)   0.2303 ( 49.6%)   0.2307 ( 49.7%)  DAG Combining 1
+   0.0742 ( 16.3%)   0.0009 (  9.3%)   0.0751 ( 16.2%)   0.0751 ( 16.2%)  Instruction Selection
+   0.0644 ( 14.1%)   0.0008 (  8.1%)   0.0651 ( 14.0%)   0.0652 ( 14.0%)  DAG Combining 2
+   0.0408 (  9.0%)   0.0015 ( 16.5%)   0.0423 (  9.1%)   0.0422 (  9.1%)  Instruction Scheduling
+   0.0215 (  4.7%)   0.0015 ( 16.0%)   0.0230 (  5.0%)   0.0230 (  5.0%)  Instruction Creation
+   0.0118 (  2.6%)   0.0007 (  7.1%)   0.0125 (  2.7%)   0.0125 (  2.7%)  DAG Legalization
+   0.0070 (  1.5%)   0.0006 (  7.0%)   0.0076 (  1.6%)   0.0076 (  1.6%)  Type Legalization
+   0.0049 (  1.1%)   0.0008 (  8.5%)   0.0057 (  1.2%)   0.0057 (  1.2%)  Instruction Scheduling Cleanup
+   0.0014 (  0.3%)   0.0006 (  6.4%)   0.0020 (  0.4%)   0.0020 (  0.4%)  Vector Legalization
+   0.0006 (  0.1%)   0.0000 (  0.1%)   0.0006 (  0.1%)   0.0006 (  0.1%)  DAG Combining after legalize types
+   0.4551 (100.0%)   0.0092 (100.0%)   0.4643 (100.0%)   0.4646 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                 DWARF Emission
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0263 seconds (0.0268 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0117 ( 71.7%)   0.0047 ( 47.1%)   0.0164 ( 62.4%)   0.0165 ( 61.4%)  DWARF Exception Writer
+   0.0046 ( 28.1%)   0.0053 ( 52.9%)   0.0099 ( 37.5%)   0.0103 ( 38.5%)  Debug Info Emission
+   0.0000 (  0.2%)   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0000 (  0.1%)  DWARF Debug Writer
+   0.0163 (100.0%)   0.0099 (100.0%)   0.0263 (100.0%)   0.0268 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 7.1846 seconds (7.1906 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   2.2595 ( 33.1%)   0.1164 ( 32.0%)   2.3759 ( 33.1%)   2.3768 ( 33.1%)  Inliner for always_inline functions
+   1.6243 ( 23.8%)   0.0650 ( 17.9%)   1.6893 ( 23.5%)   1.6909 ( 23.5%)  X86 DAG->DAG Instruction Selection
+   1.3519 ( 19.8%)   0.0050 (  1.4%)   1.3569 ( 18.9%)   1.3583 ( 18.9%)  Insert stack protectors
+   0.4301 (  6.3%)   0.0296 (  8.1%)   0.4596 (  6.4%)   0.4603 (  6.4%)  X86 Assembly Printer
+   0.2901 (  4.3%)   0.0034 (  0.9%)   0.2935 (  4.1%)   0.2936 (  4.1%)  Prologue/Epilogue Insertion & Frame Finalization
+   0.1982 (  2.9%)   0.0075 (  2.1%)   0.2057 (  2.9%)   0.2059 (  2.9%)  Fast Register Allocator
+   0.0983 (  1.4%)   0.0042 (  1.2%)   0.1025 (  1.4%)   0.1027 (  1.4%)  Two-Address instruction pass
+   0.0669 (  1.0%)   0.0049 (  1.3%)   0.0718 (  1.0%)   0.0719 (  1.0%)  Dominator Tree Construction
+   0.0586 (  0.9%)   0.0059 (  1.6%)   0.0645 (  0.9%)   0.0644 (  0.9%)  MachineDominator Tree Construction
+   0.0487 (  0.7%)   0.0157 (  4.3%)   0.0643 (  0.9%)   0.0642 (  0.9%)  Free MachineFunction
+   0.0504 (  0.7%)   0.0034 (  0.9%)   0.0538 (  0.7%)   0.0538 (  0.7%)  Dominator Tree Construction
+   0.0484 (  0.7%)   0.0034 (  0.9%)   0.0518 (  0.7%)   0.0518 (  0.7%)  CallGraph Construction
+   0.0426 (  0.6%)   0.0032 (  0.9%)   0.0458 (  0.6%)   0.0458 (  0.6%)  Expand Atomic instructions
+   0.0385 (  0.6%)   0.0031 (  0.9%)   0.0416 (  0.6%)   0.0415 (  0.6%)  Machine Natural Loop Construction
+   0.0288 (  0.4%)   0.0031 (  0.8%)   0.0318 (  0.4%)   0.0318 (  0.4%)  Expand ISel Pseudo-instructions
+   0.0268 (  0.4%)   0.0031 (  0.8%)   0.0299 (  0.4%)   0.0298 (  0.4%)  Post-RA pseudo instruction expansion pass
+   0.0233 (  0.3%)   0.0031 (  0.8%)   0.0264 (  0.4%)   0.0263 (  0.4%)  X86 pseudo instruction expansion pass
+   0.0186 (  0.3%)   0.0032 (  0.9%)   0.0218 (  0.3%)   0.0217 (  0.3%)  Expand reduction intrinsics
+   0.0135 (  0.2%)   0.0032 (  0.9%)   0.0167 (  0.2%)   0.0166 (  0.2%)  Remove unreachable blocks from the CFG
+   0.0120 (  0.2%)   0.0036 (  1.0%)   0.0156 (  0.2%)   0.0157 (  0.2%)  Eliminate PHI nodes for register allocation
+   0.0109 (  0.2%)   0.0030 (  0.8%)   0.0139 (  0.2%)   0.0139 (  0.2%)  Exception handling preparation
+   0.0088 (  0.1%)   0.0031 (  0.9%)   0.0119 (  0.2%)   0.0119 (  0.2%)  Bundle Machine CFG Edges
+   0.0079 (  0.1%)   0.0032 (  0.9%)   0.0111 (  0.2%)   0.0113 (  0.2%)  Basic Alias Analysis (stateless AA impl)
+   0.0040 (  0.1%)   0.0031 (  0.8%)   0.0071 (  0.1%)   0.0071 (  0.1%)  Machine Optimization Remark Emitter
+   0.0038 (  0.1%)   0.0030 (  0.8%)   0.0068 (  0.1%)   0.0069 (  0.1%)  Insert fentry calls
+   0.0036 (  0.1%)   0.0030 (  0.8%)   0.0066 (  0.1%)   0.0066 (  0.1%)  Machine Optimization Remark Emitter
+   0.0033 (  0.0%)   0.0030 (  0.8%)   0.0063 (  0.1%)   0.0066 (  0.1%)  Insert XRay ops
+   0.0032 (  0.0%)   0.0031 (  0.8%)   0.0063 (  0.1%)   0.0063 (  0.1%)  Implement the 'patchable-function' attribute
+   0.0030 (  0.0%)   0.0031 (  0.8%)   0.0060 (  0.1%)   0.0061 (  0.1%)  Local Stack Slot Allocation
+   0.0030 (  0.0%)   0.0030 (  0.8%)   0.0060 (  0.1%)   0.0060 (  0.1%)  X86 FP Stackifier
+   0.0029 (  0.0%)   0.0030 (  0.8%)   0.0059 (  0.1%)   0.0059 (  0.1%)  Contiguously Lay Out Funclets
+   0.0028 (  0.0%)   0.0030 (  0.8%)   0.0058 (  0.1%)   0.0059 (  0.1%)  Live DEBUG_VALUE analysis
+   0.0028 (  0.0%)   0.0030 (  0.8%)   0.0057 (  0.1%)   0.0059 (  0.1%)  Lazy Machine Block Frequency Analysis
+   0.0027 (  0.0%)   0.0029 (  0.8%)   0.0057 (  0.1%)   0.0058 (  0.1%)  X86 WinAlloca Expander
+   0.0027 (  0.0%)   0.0029 (  0.8%)   0.0056 (  0.1%)   0.0058 (  0.1%)  X86 PIC Global Base Reg Initialization
+   0.0027 (  0.0%)   0.0030 (  0.8%)   0.0057 (  0.1%)   0.0058 (  0.1%)  StackMap Liveness Analysis
+   0.0024 (  0.0%)   0.0032 (  0.9%)   0.0056 (  0.1%)   0.0056 (  0.1%)  Inserts calls to mcount-like functions
+   0.0025 (  0.0%)   0.0030 (  0.8%)   0.0055 (  0.1%)   0.0056 (  0.1%)  Analyze Machine Code For Garbage Collection
+   0.0026 (  0.0%)   0.0030 (  0.8%)   0.0056 (  0.1%)   0.0056 (  0.1%)  Lazy Machine Block Frequency Analysis
+   0.0024 (  0.0%)   0.0031 (  0.8%)   0.0055 (  0.1%)   0.0054 (  0.1%)  X86 vzeroupper inserter
+   0.0022 (  0.0%)   0.0032 (  0.9%)   0.0053 (  0.1%)   0.0054 (  0.1%)  Scalarize Masked Memory Intrinsics
+   0.0021 (  0.0%)   0.0032 (  0.9%)   0.0053 (  0.1%)   0.0053 (  0.1%)  Lower Garbage Collection Instructions
+   0.0020 (  0.0%)   0.0031 (  0.9%)   0.0052 (  0.1%)   0.0052 (  0.1%)  Shadow Stack GC Lowering
+   0.0023 (  0.0%)   0.0030 (  0.8%)   0.0053 (  0.1%)   0.0051 (  0.1%)  Safe Stack instrumentation pass
+   0.0029 (  0.0%)   0.0000 (  0.0%)   0.0029 (  0.0%)   0.0029 (  0.0%)  Assumption Cache Tracker
+   0.0020 (  0.0%)   0.0001 (  0.0%)   0.0021 (  0.0%)   0.0021 (  0.0%)  Assumption Cache Tracker
+   0.0005 (  0.0%)   0.0000 (  0.0%)   0.0005 (  0.0%)   0.0005 (  0.0%)  Pre-ISel Intrinsic Lowering
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Rewrite Symbols
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Force set function attributes
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Transform Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Profile summary info
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Module Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Create Garbage Collector Module Metadata
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Pass Configuration
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Branch Probability Analysis
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Library Information
+   6.8214 (100.0%)   0.3632 (100.0%)   7.1846 (100.0%)   7.1906 (100.0%)  Total
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_constants.cpp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_data.cpp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_constants.cpp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_data.cpp.o) has no symbols
