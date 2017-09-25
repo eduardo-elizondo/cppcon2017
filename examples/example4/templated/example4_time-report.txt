@@ -333,8 +333,3 @@
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Branch Probability Analysis
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Library Information
    6.8214 (100.0%)   0.3632 (100.0%)   7.1846 (100.0%)   7.1906 (100.0%)  Total
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_constants.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_data.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_constants.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_data.cpp.o) has no symbols

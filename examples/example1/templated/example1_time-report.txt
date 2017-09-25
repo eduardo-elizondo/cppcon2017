@@ -219,8 +219,3 @@
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Pass Configuration
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Branch Probability Analysis
    1.0574 (100.0%)   0.0889 (100.0%)   1.1463 (100.0%)   1.1461 (100.0%)  Total
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_1.a(file1_constants.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_1.a(file1_data.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_1.a(file1_constants.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_1.a(file1_data.cpp.o) has no symbols

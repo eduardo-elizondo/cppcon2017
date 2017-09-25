@@ -333,8 +333,3 @@
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Pass Configuration
    0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Transform Information
   11.7381 (100.0%)   0.6173 (100.0%)  12.3554 (100.0%)  12.3728 (100.0%)  Total
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_constants.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_data.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_constants.cpp.o) has no symbols
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libthrift_example_4.a(file1_data.cpp.o) has no symbols
