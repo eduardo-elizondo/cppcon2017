@@ -1,18 +1,11 @@
-if(templated)
-  aux_source_directory(./templated/gen-cpp2 GENERATED_FILES)
-else()
-  aux_source_directory(./normal/gen-cpp2 GENERATED_FILES)
-endif()
+find_package(Folly REQUIRED)
+find_package(Thrift REQUIRED)
+include_directories(${THRIFT_INCLUDE_DIR})
 
-add_library(
-  thrift_example
-
-  ${GENERATED_FILES}	
-  ${FOLLY_INCLUDE_DIR}
-  ${THRIFT_INCLUDE_DIR}
-)
+aux_source_directory(./${gen_type}/gen-cpp2 GENERATED_FILES)
+add_library(thrift_example_2 ${GENERATED_FILES})
 target_link_libraries(
-  thrift_example
+  thrift_example_2
 
   ${FOLLY_LIBRARY}
   ${THIRFT_LIBRARY}

@@ -1,5 +1,5 @@
 mkdir build
 pushd build
-cmake -D$1=ON -Dtemplated=$2 ..
+cmake -Dsubdir=$1 -Dgen_type=$2
 make 2> $1_time-report.txt
 popd

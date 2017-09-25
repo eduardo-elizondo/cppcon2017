@@ -1,9 +1,8 @@
-if(templated)
-  aux_source_directory(./templated/gen-cpp2 GENERATED_FILES)
-else()
-  aux_source_directory(./normal/gen-cpp2 GENERATED_FILES)
-endif()
+find_package(Folly REQUIRED)
+find_package(Thrift REQUIRED)
+include_directories(${THRIFT_INCLUDE_DIR})
 
+aux_source_directory(./${gen_type}/gen-cpp2 GENERATED_FILES)
 add_library(
   thrift_example_4
 
