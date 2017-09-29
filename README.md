@@ -26,9 +26,12 @@ These patches add modifications to Clang's frontend to gather more metrics on co
 If you have CMake follow: example/CMakeLists.txt
 
 ### Time Report:
-  - ./external/llvm_build/bin/clang++ -ftime-report your.cpp
+  - `./external/llvm_build/bin/clang++ -ftime-report a.cpp`
 
 ### Templight:
-  - ./external/llvm_build_bin/templight++ -Xtemplight -profiler -Xtemplight -ignore-system file.cpp
-  - ./tools/get_inst_times.sh results your_build/file.cpp.o.trace.pbf
+  - `./external/llvm_build_bin/templight++ -Xtemplight -profiler -Xtemplight -ignore-system -c a.cpp`
+  - `./tools/get_inst_times.sh results your_build/file.cpp.o.trace.pbf1
 For more flags that you can use for templight, visit the github in the Requirement section. In general, profiler and "ignore-system" system templates are the most useful ones.
+
+### Questions?
+Please create a github issue and we can start a discussion!
