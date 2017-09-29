@@ -19,7 +19,7 @@ These patches add modifications to Clang's frontend to gather more metrics on co
 ### Templight:
   * Capture template instantiations to gather data on instantiation times. Original Project: https://github.com/mikael-s-persson/templight
 ### Tools:
-  * Convert profiled template instantitations into a nice list sorted by template instantitation time: https://github.com/eduardo-elizondo/templight-tools
+  * Convert profiled template instantitations into a nice list showing instantitation time per template: https://github.com/eduardo-elizondo/templight-tools
 
 
 ## How to use:
