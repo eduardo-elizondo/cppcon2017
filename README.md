@@ -7,7 +7,7 @@ Optimizing compilation times of Generated Code with Templates
 * Ninja build system: https://ninja-build.org/
 
 ## Build the tools:
-* ./tools/build_deps.sh
+* `./tools/build_deps.sh`
 
 This will download, patch, and build clang, llvm, and templight.
 
