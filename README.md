@@ -13,12 +13,13 @@ This will download, patch, and build clang, llvm, and templight.
 
 ## What do the patches include?
 ### Time Report:
-  * Template Instatiation Time
-  * Preprocessing Time (Lex)
+These adds modifications to the Clang frontend to gather more metrics on compilation time
+  * Template Instatiation Time: https://reviews.llvm.org/D36946
+  * Preprocessing Time (Lex) (author @Brian Gesiak): https://reviews.llvm.org/D36492 
 ### Templight:
-  * Profile information on template instantitation
+  * Capture template instantiations to gather data on instantiation times. Original author: https://github.com/mikael-s-persson/templight
 ### Tools:
-  * Convert profiled template instantitations into a nice list sorted by template instantitation time.
+  * Convert profiled template instantitations into a nice list sorted by template instantitation time: https://github.com/eduardo-elizondo/templight-tools
 
 
 ## How to use:
