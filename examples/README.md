@@ -1,9 +1,10 @@
 # Examples
 
 ## Running with CMake
- - ./build "directory" "build_type" 
+ - `./build "directory" "build_type"` 
 
 *directory*: Corresponds to: "fibonacci", "example1", etc...
+
 *build_type*: This only applies to thrift examples.  The build time is an option between: "normal", and "templated". This helps contrast the difference in compilation time for both approaches.
 
  - ./build fibonacci
