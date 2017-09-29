@@ -17,7 +17,7 @@ These patches add modifications to Clang's frontend to gather more metrics on co
   * Template Instatiation Time: https://reviews.llvm.org/D36946
   * Preprocessing Time (Lex) (author @Brian Gesiak): https://reviews.llvm.org/D36492 
 ### Templight:
-  * Capture template instantiations to gather data on instantiation times. Original author: https://github.com/mikael-s-persson/templight
+  * Capture template instantiations to gather data on instantiation times. Original Project: https://github.com/mikael-s-persson/templight
 ### Tools:
   * Convert profiled template instantitations into a nice list sorted by template instantitation time: https://github.com/eduardo-elizondo/templight-tools
 
@@ -30,7 +30,7 @@ If you have CMake follow: example/CMakeLists.txt
 
 ### Templight:
   - `./external/llvm_build_bin/templight++ -Xtemplight -profiler -Xtemplight -ignore-system -c a.cpp`
-  - `./tools/get_inst_times.sh results your_build/file.cpp.o.trace.pbf1
+  - `./tools/get_inst_times.sh results your_build/file.cpp.o.trace.pbf`
 For more flags that you can use for templight, visit the github in the Requirement section. In general, profiler and "ignore-system" system templates are the most useful ones.
 
 ### Questions?
